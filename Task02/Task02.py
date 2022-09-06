@@ -2,7 +2,7 @@
 # Должна получиться таблица истинности.
 
 import os
-from turtle import back
+# pip install colorama
 import colorama
 from colorama import Fore, Back, Style
 colorama.init
