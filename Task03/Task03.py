@@ -9,7 +9,7 @@ import os
 os.system("cls")
 
 print("Программа, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости,  в которой находится эта точка (или на какой оси она находится).")
-
+print('Введите координаты точки, по осям X и Y. Эти  координаты не должны быть равны 0.')
 def number_input(input_string):
     while type:
         digit = input(input_string)
@@ -71,7 +71,7 @@ def search_position(axis_x, axis_y):
         elif axis_x < 0 and axis_y < 0:
             quarter_3()
         else: quarter_4()
-    else: print('Вы ввели неверные координаты')
+    else: print('Вы ввели неверные координаты, по условиям задачи 0 не подходит.')
 
 search_position(axis_x, axis_y)
 
